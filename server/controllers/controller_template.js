@@ -12,11 +12,23 @@ var models = requireFolder("models");
 module.exports = {
 	test: function(req, res){
 		console.log("controller function called successfully");
-		
-		//response inside callback
-		models.model_template.test(req, res, function(){
-			res.send("successfully made it through route->controller->model->response");
-		});
 
+		//response inside callback
+		// models.model_template.test(req, res, function(){
+			res.send("successfully made it through route->controller->model->response");
+		// });
+	},
+
+	index: function(req, res){
+		//response inside callback
+		// models.model_template.test(req, res, function(){
+			res.render('/index.html');
+		// });
+	},
+
+	ajax_test: function(req, res){
+		// models.model_template.test(req, res, function(){
+			res.json({ajax_test1 : "ajax_test1", ajax_test2 : "ajax_test2"});
+		// });
 	}
-}
+	}
