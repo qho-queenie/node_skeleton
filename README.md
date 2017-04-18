@@ -1,9 +1,9 @@
-##Node Template
+# Fishbowl-Hackathon
 
 #####Queenie Ho
-queenieio.com  
+https://www.queenieio.com  
 https://www.linkedin.com/in/queenieho1/  
 
 #####Chris Rollins
-chrisrollins.io  
+https://www.chrisrollins.io  
 https://www.linkedin.com/in/chris-rollins-2669a053/  

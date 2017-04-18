@@ -1,8 +1,8 @@
 {
-  "name": "node_skeleton",
+  "name": "Plant",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/qho-queenie/node_skeleton"
   },
-  "author": "Queenie Ho & Chris Rollins",
+  "author": "Queenie Ho, Elliot Young, and Chris Rollins",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/qho-queenie/node_skeleton/issues"
@@ -18,7 +18,6 @@
   "homepage": "https://github.com/qho-queenie/node_skeleton#readme",
   "dependencies": {
     "body-parser": "latest",
-    "mongoose": "latest",
     "angular-route": "^1.6.1",
     "aws-sdk": "^2.7.21",
     "bcryptjs": "^2.4.0",
@@ -29,6 +28,7 @@
     "html": "^1.0.0",
     "mailchimp-api-v3": "^1.7.0",
     "mysql": "^2.12.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "nodemailer": "^3.1.3"
   }
 }
