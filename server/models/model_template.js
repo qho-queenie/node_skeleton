@@ -5,9 +5,8 @@ var connection = require('../config/mysql.js');
 var doQuery = require('../config/doquery_function.js');
 //the doQuery function is available. it takes a string which is the query, and an optional callback function
 //the callback function takes one argument, rows. it is an array returned from a successful query.
-//the callback function is only called when the query is successful.
-//the purpose of the callback function is to enable you to modify the results of the query.
-//this is usually not necessary so 99% of the time you shouldn't need a callback at all.
+//the callback function is called whether the query is successful or not.
+//send the response (for example res.json(rows) or whatever) from the callback.
 
 module.exports = {
 	test: function(req, res, callback){
