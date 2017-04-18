@@ -1,4 +1,4 @@
-//Controller template
+//User controller
 
 //the following things enable this controller to access the models, and also to send html files as responses
 var path = require("path");
@@ -10,23 +10,16 @@ var models = require(path.join(__dirname, "./../config/model_combiner.js"));
 //after that you can make the response here in the controller
 
 module.exports = {
-	index: function(req, res){
-		//response inside callback
-		// models.model_template.test(req, res, function(){
-			res.render('/index.html');
-		// });
+	userLogin: function(req, res){
+		models.login(req, res, function(){
+			res.render('/logintest.html');
+		});
 	},
-	
-	home: function(req, res){
-		//response inside callback
-		// models.model_template.test(req, res, function(){
-			res.render('/home.html');
-		// });
+	userRegistration: function(req, res){
+		models.registration(req, res, function(){
+			res.render('/regtest.html');
+		});
 	},
-
-	ajax_test: function(req, res){
-		// models.model_template.test(req, res, function(){
-			res.json({ajax_test1 : "ajax_test1", ajax_test2 : "ajax_test2"});
-		// });
-	}
+	index: function(){},
+	home: function(){}	
 }
